@@ -1,8 +1,7 @@
+import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'dart:io';
-
 import 'package:website_to_apk/helpers/config.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,6 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
       crossPlatform: InAppWebViewOptions(
         useShouldOverrideUrlLoading: true,
         mediaPlaybackRequiresUserGesture: false,
+        userAgent: "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.4) Gecko/20100101 Firefox/4.0",
       ),
       android: AndroidInAppWebViewOptions(
         useHybridComposition: true,
