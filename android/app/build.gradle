@@ -74,6 +74,13 @@ android {
             versionName flutterVersionName
         }
 
+        streamyard {
+            dimension "app"
+            applicationId "com.streamyard.app"
+            versionCode flutterVersionCode.toInteger()
+            versionName flutterVersionName
+        }
+
         goodgameempire {
             dimension "app"
             applicationId "com.goodgameempire.app"
